@@ -1,0 +1,21 @@
+import java.util.*;
+import java.util.Random;
+public class SumAveMax_ {
+	 public static void main(String[] args) {
+	        
+	        int[] array = { 10, 100, 50, 33, 5 };
+	        int sum = 0; int max = 0;
+	        for (int i = 0; i < array.length; i++){
+	            if (array[i] > max) {
+	                max = array[i];
+	            }
+	            System.out.println("array["+i+"]= " + array[i]);
+	            sum += array[i];
+	        }
+	        double average = (double) sum / array.length;
+	        System.out.println();
+	        System.out.println("Sum = " + sum);
+	        System.out.println("Average = " + average);
+	        System.out.println("Max = " + max);
+	    }
+}
