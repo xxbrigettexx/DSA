@@ -1,0 +1,25 @@
+import java.util.*;
+public class FindMaxInt {
+ public static void main(String[] args) {
+  int[] numbers = {1, 3, 5, 15, 20};
+
+  for(int i = 0; i < numbers.length; i++) {
+   System.out.println(numbers[i] + " ");
+  }
+
+  int sum = 0;
+  for (int i = 0; i < numbers.length; i++) {
+   sum = sum + numbers[i];
+  }
+  
+  double average = sum / numbers.length;
+  System.out.println("Total = " + sum);
+  System.out.println("Average = " + average);
+
+  int max = numbers[0];
+  for (int i = 1; i < numbers.length; i++){ 
+   if (numbers[i] > max) max = numbers[i];
+  }
+  System.out.println("Max = " + max);
+ }
+}
