@@ -25,7 +25,6 @@ import java.util.Random;
 			
 			System.out.print("Enter number to find: ");
 			search = input.nextInt();
-			// TODO: use nextInt() to assign keyboard input as search item	
 			index = binarySearch(array, search); 
 			// note: assign the search result to array index where it was found	
 		
@@ -42,8 +41,8 @@ import java.util.Random;
 		static int binarySearch(int[] numbers, int find) { // note: @param array[], search
 
 			int left, right, middle;
-			// TODO: initialize value for left and right
-			
+			left = 0;
+			right = numbers.length - 1;
 			while (left <= right) {
 				middle = left + (right - left) / 2;
 				if (numbers[middle] == find) {
