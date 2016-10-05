@@ -1,0 +1,33 @@
+import java.util.*;
+import java.util.Random;
+public class LinearSearch {
+
+	public static void main(String[] args) {
+
+		int i, size, search, array[];
+
+		Scanner input = new Scanner(System.in);
+		Random rand = new Random();
+
+		System.out.print("Enter array size: ");
+		size = input.nextInt();
+		array = new int[size];		
+
+		System.out.print("Enter number to find: ");
+    search = input.nextInt();
+
+		for (i = 0; i < size; i++) {
+    array[i] = rand.nextInt(1000);
+			if (array[i] == search) {
+				System.out.println("FOUND: " + search + " is at " + "array["+i+"]");
+				break; // note: break the loop if not found
+			} 			
+		}
+
+		// TODO: if searching reaches the array size and still no match, print NOT FOUND
+			System.out.println("NOT FOUND: " + search + " is not in the array.");
+		}
+
+	}
+
+}
