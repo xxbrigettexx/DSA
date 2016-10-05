@@ -14,20 +14,22 @@ public class LinearSearch {
 		array = new int[size];		
 
 		System.out.print("Enter number to find: ");
-    search = input.nextInt();
+    		search = input.nextInt();
 
 		for (i = 0; i < size; i++) {
-    array[i] = rand.nextInt(1000);
+    		array[i] = rand.nextInt(1000);
 			if (array[i] == search) {
 				System.out.println("FOUND: " + search + " is at " + "array["+i+"]");
 				break; // note: break the loop if not found
-			} 			
-		}
-
+			} 
+			}
 		// TODO: if searching reaches the array size and still no match, print NOT FOUND
-			System.out.println("NOT FOUND: " + search + " is not in the array.");
+					System.out.println("NOT FOUND: " + search + " is not in the array.");
 		}
 
-	}
+		
+		}
 
-}
+
+
+
